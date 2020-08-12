@@ -1,4 +1,5 @@
 import React from "react";
+// import Header from "./header";
 
 const Pictures = (props) => {
   const { data } = props;
@@ -10,3 +11,5 @@ const Pictures = (props) => {
 };
 
 export default Pictures;
+
+// export { Pictures, Header };

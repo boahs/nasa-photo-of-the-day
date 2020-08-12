@@ -4,6 +4,8 @@ import axios from "axios";
 import { BASE_URL, API_KEY } from "./constants/index";
 import Pictures from "./components/image";
 import Header from "./components/header";
+import Explain from "./components/explain";
+// import { Pictures, Header } from "./components/";
 
 function App() {
   const [nasaData, getNasaData] = useState({});
@@ -23,6 +25,7 @@ function App() {
     <div className="App">
       <Header data={nasaData} />
       <Pictures data={nasaData} />
+      <Explain data={nasaData} />
       <p>
         Read through the instructions in the README.md file to build your NASA
         app! Have fun
