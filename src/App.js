@@ -4,6 +4,18 @@ import axios from "axios";
 import { BASE_URL, API_KEY } from "./constants/index";
 
 function App() {
+  const [nasaData, getNasaData] = useState({});
+  useEffect(() => {
+    axios
+      .get(`${BASE_URL}${API_KEY}`)
+      .then((response) => {
+        getNasaData(response.data);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
+  console.log(nasaData);
   return (
     <div className="App">
       <p>
@@ -14,7 +26,6 @@ function App() {
         </span>
         !
       </p>
-      console.log({API_KEY})
     </div>
   );
 }
