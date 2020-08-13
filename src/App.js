@@ -5,10 +5,12 @@ import { BASE_URL, API_KEY } from "./constants/index";
 import Pictures from "./components/image";
 import Header from "./components/header";
 import Explain from "./components/explain";
+
 // import { Pictures, Header } from "./components/";
 
 function App() {
   const [nasaData, getNasaData] = useState({});
+
   useEffect(() => {
     axios
       .get(`${BASE_URL}${API_KEY}`)
