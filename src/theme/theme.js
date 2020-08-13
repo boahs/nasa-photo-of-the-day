@@ -7,6 +7,7 @@ const theme = {
   smallSize: "0.8rem",
   highlightedText: "yellow",
   smallPadding: "3%",
+  transformUp: "scale(1.5)",
 };
 
 export default theme;
