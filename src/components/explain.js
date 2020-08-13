@@ -14,6 +14,9 @@ const Explain = (props) => {
     font-size: ${(props) => props.theme.smallSize};
     color: ${(props) => props.theme.secondaryColor};
     background-color: ${(props) => props.theme.highlightedText};
+    &:hover {
+      transform: ${(props) => props.theme.transformUp};
+    }
   `;
 
   return (
